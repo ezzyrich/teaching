@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+body {
+	
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+p {
+	color:#333;
+}
+.vidList li{
+	list-style: none;
+	float: left;
+	display: block;
+	border-bottom: 1px solid #444;
+	margin: 5px;
+	padding: 10px;
+}
+.vidList li a img{
+	float: left;
+	width: 150px;
+}
+.imgwrap{
+	padding: 5px;
+	height: 180px;
+	overflow: hidden;
+}
+.imgWrap img:hover{
+	width: 120%;
+	margin-left: -10%;
+}
+input:focus{
+	border:1px solid #ff0000;
+	outline: 1px solid #ff0000;
+}
+@media screen and (min-width:800px ){
+.vidList li{
+	width: 15%;
+	border:1px solid #cc0; 
+	padding: 10px;
+	margin: 10px;
+
+
+	
+}
+.vidList li a img{
+width: 100%;
+}
+.vidList li:nth-child(3n+1){
+   width: 30%;
+}
+}
+@media (min-width:540px ) and (max-width: 800px){
+.vidList li{
+	width: 30%;
+	border:1px solid #cc0; 
+	padding: 10px;
+
+
+}
+.vidList li a img{
+          width: 100%;
+}
+.vidList li :nth-child(3n+1){
+   width: 44%;
+}
+}
+
+
+
+
+
+@media screen and (max-width:540px ){
+.vidList li{
+	border:1px solid #cc0;
+	padding: 10px;
+}
